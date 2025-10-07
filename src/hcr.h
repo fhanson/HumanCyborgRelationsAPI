@@ -212,6 +212,15 @@ public:
     void PlayWAV(int v,String file);
 
     /**
+     * @brief Plays a WAV file by file name
+     * 
+     * @param v the channel (CH_A|CH_B)
+     * @param file1 the file name prefix (e.g. "0000")
+     * @param file2 the file name prefix (e.g. "0001")  
+     */
+    void PlayRandomWAV(int v,String file1, String file2);
+
+    /**
      * @brief Stops the WAV playing on the specified channel
      * 
      * @param ch the channel (CH_A|CH_B)
