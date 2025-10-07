@@ -466,7 +466,7 @@ void HCRVocalizer::PlayRandomWAV(int ch,String file1, String file2) {
     if (millis() > lastPlayWAV) {
         lastPlayWAV = millis() + 5000;
         char channel[] = "VAB";
-        String msg = "C" + ToString((char) channel[ch]) + file1 + "C" + ToString((char) channel[ch]) + file2 + ",QP" + ToString((char) channel[ch]);
+        String msg = "C" + ToString((char) channel[ch]) + file1 + "C" + file2 + ",QP" + ToString((char) channel[ch]);
         sendCommand(msg);
     }
 }
